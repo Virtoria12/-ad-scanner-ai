@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: #0a0a0a;
-  color: white;
-  font-family: sans-serif;
+:root {
+  color-scheme: dark;
 }
+
+html,
+body {
+  background: #0b0b0f;
+  color: #e7e7ee;
+}
+
+body {
+  font-feature-settings: "ss01", "cv01";
+  -webkit-font-smoothing: antialiased;
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #2a2a36; border-radius: 8px; }
